@@ -1,0 +1,226 @@
+body{
+background: var(--back);
+-webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --primary: #080808;
+    --second: #8ed6ff;
+    --third: #ffe3b0;
+    --fourth: #ccf6c8;
+    --fifth: #726a95;
+    --back: #191919;
+    --dark: #0e0e0e;
+    --text: #f7f7f7;
+  }
+
+  *{
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background-color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.52) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+    align-items: center;
+    height: 54px;
+    color: #ffffff;
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+header li{
+    display: inline-block;
+    padding: 5px;
+}
+header .cart-icon{
+    width: 100%;
+    
+}
+header .shopping-cart{
+    width: 25px;
+  
+}
+header .logo-img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+.nav-items .menu-img{
+    width: 25px;
+}
+header .container, .row{
+    height: 100%;
+}
+
+header .menu-dropdown{
+    background-color:  var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.52) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+    margin-top: 20px;
+    
+}
+header .dropdown-item {
+    color: white;
+}
+.dropdown-item.active,.dropdown-item:active{
+    color: #fff;
+    background-color: var(--dark)
+}
+.dropdown-item:hover{
+    color:#fff;
+    background-color: var(--dark)
+}
+
+.menu-dropdown .food{
+    width: 20px;
+    margin-right: 5px;
+}
+.menu-dropdown .acc{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.menu-dropdown .contact{
+    width: 17px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+.menu-dropdown .darkm{
+    width: 17px;
+    margin-right: 5px;
+}
+
+.menu-dropdown hr{
+    width: 80%;
+    background-color: white ;
+}
+.btn:focus{
+    border-color: transparent !important;
+    box-shadow: 0 0 0px !important;
+}
+
+/* home */
+
+.home-card{
+    background-color: var(--primary);
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.52) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+}
+.huesitos{
+    height: 100%;
+    width: 20%;
+}
+
+.home-title{
+    width: 80%;
+    height: 100%;
+    padding: 50px;
+}
+.home-title h1{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 52px;
+    font-weight: 600;
+}
+.home-title p{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.home-btn button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: var(--second);
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+/* ofertas */
+
+.ofertas-card{
+    background-color: var(--back);
+    height: 600px;
+    margin-top: 30px;
+    
+}
+.ofertas-card .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.52) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+    height: 300px;
+    background: var(--third);
+}
+
+.ofertas-card .btn-price{
+    
+    background-color: var(--text);
+}
+.ofertas-card .btn-price:hover{
+    
+    background-color: white;
+}
+.ofertas-card a{
+    color: var(--dark);
+}
+.ofertas-card a:hover{
+    text-decoration: none;
+}
+
+.ofertas-card .btn-card-cart{
+    color: var(--dark);
+}
+.ofertas-card .btn-card-cart:hover{
+    background: var(--text);
+}
+.img-container{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--dark);
+   margin: 20px 0 0 20px ;
+    
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+.ofertas .card-body{
+    position: absolute;
+    bottom: 30px;
+    margin: 20px 0 0 20px ;
+    padding: 0 !important;
+}
+
+.col-md-3{
+    padding: 10px!important;
+}
+
+.ofertas-card .card-text{
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* cart */
+
+.cart-card{
+    background-color: var(--primary);
+    min-height: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+    width: 450px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.52) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+}
